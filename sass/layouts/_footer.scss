@@ -1,0 +1,126 @@
+.footer{
+    background-color: var(--primary-bghero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline; 
+} 
+.footer__adress {
+  margin-right: 70px;
+}
+
+.footer__contacts-item {
+  margin-bottom: 9px;
+}
+.address__map {
+  font-size: 14px;
+ line-height: 1.71;
+ letter-spacing: 0.03em;
+ color: var(--primary-white-color);
+ font-style: normal;
+ text-decoration: none; 
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__mail,
+.adress__tel {
+  margin-bottom: 9px;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--address-color);
+font-style: normal; 
+text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
+.address__map:hover,
+.address__map:focus,
+.address__mail:hover,
+.address__mail:focus,
+.adress__tel:hover,
+.adress__tel:focus {
+color:var(--accent-color);
+}
+.footer__subtitle {
+    font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  margin-bottom: 20px;
+  }
+  
+  .footer__action {
+    display: flex;
+     
+    }
+    .footer__action .footer__action-item+ .footer__action-item {
+    margin-left: 10px;
+    
+  }
+  .footer__action-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #42424b;
+    color: var(--primary-white-color);
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color:  var(--primary-white-color);
+  }
+  }
+  
+  
+  .footer__team-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+      }
+  
+      .subscription-container{
+        margin-left: auto;
+    }
+    
+    
+    .subscription-form{
+        display: flex;
+        align-items: center;
+    
+          gap: 12px;
+    }
+    
+    
+    .subscription{
+        display: flex;
+        flex-direction: column;
+    }
+    .subscription__mail{
+    color: var(--primary-white-color)
+    }
+    
+    
+    .subscription-form input {
+        width: 358px;
+        padding: 16px 295px 16px 16px;
+    
+    
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        
+        border-radius: 4px;
+    }
+    
+    
+    
