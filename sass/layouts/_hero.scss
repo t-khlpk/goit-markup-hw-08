@@ -1,19 +1,51 @@
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-      margin-right: auto;
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+      
 
       text-align: center;
       background-color: var(--primary-bghero-color);
+
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/Img.jpg");
+      url("../images/hero/bg-sm@1x.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/bg-sm@2x.jpg");
+      }
+
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      max-width: 1600px;
       
-     
+
+      @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/bg-md@1x.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/bg-md@2x.jpg");
+      }
+      }
+      
+      @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/bg-lg@1x.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/bg-lg@2x.jpg");
+      }
+      } 
       
   }
 
@@ -41,8 +73,7 @@
       }
   }  
   
-  
-  
+    
   .is-hidden {
     opacity: 0;
     pointer-events: none;

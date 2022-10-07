@@ -59,6 +59,7 @@
     transform: translateX(100%);
     transition: 400ms;
     background-color: white;
+
     &.is-open{
         z-index: 1000;
         transform: translateX(0);

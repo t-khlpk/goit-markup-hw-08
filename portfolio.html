@@ -28,9 +28,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         
         <a class="logo" href="">Web<span class="logo__color">Studio</span></a>
+        <div class="header__container--hidden">
         <nav class="header-nav">
         <ul class="site-nav list">
           <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студія</a></li>
@@ -49,6 +50,39 @@
         </li>
       </ul>
       </div>
+      <button type="button" class="menu-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu">
+        <svg class="menu-btn__open" width="40" height="40">
+          <use href="./images/icon/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+      <!-- Mobile menu window -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-btn__close" width="40" height="40">
+            <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студія</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--active">Портфоліо</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item"><a href="" class="mobile-contact__tel">+38 096 111 11 11</a></li>
+          <li class="mobile-contact__item"><a href="" class="mobile-contact__mail">info@devstudio.com</a></li>
+        </ul>        
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        </ul>
+      </div>
+      </div>
+      
     </header>
     <main>
       <section class="section project">
@@ -237,5 +271,14 @@
 </div>    
  </div>
 </footer>
+
+          <!-- Mobile menu script -->
+          <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous">
+        </script>
+        <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

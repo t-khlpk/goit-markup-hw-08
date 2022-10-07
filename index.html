@@ -29,11 +29,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         
         <a class="logo" href="./index.html"
         >Web<span class="logo__color">Studio</span></a
       >
+      <div class="header__container--hidden">
       <nav class="header-nav">
         <ul class="site-nav list">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link-link__activ" href="">Студія</a></li>
@@ -42,13 +43,13 @@
         </ul>
       </nav>
       <ul class="nav list">
-        <li class="nav-item">          
-          <a class="contacts-header-link mail" href="maltro:info@devstudio.com"><svg class="nav-icon" width="16" height="12" >
+        <li class="nav__item">          
+          <a class="nav__link mail" href="maltro:info@devstudio.com"><svg class="nav__icon" width="16" height="12" >
             <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
           </svg>info@devstudio.com
           </a>
         </li>
-        <li class="nav-item"><a class="contacts-header-link tel" href="tel:+380961111111"><svg class="nav-icon" width="10" height="16" >
+        <li class="nav__item"><a class="nav__link tel" href="tel:+380961111111"><svg class="nav-icon" width="10" height="16" >
           <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11
           
@@ -58,14 +59,14 @@
       <button type="button" class="menu-btn js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu">
-        <svg class="menu-btn__open" width="24" height="16">
+        <svg class="menu-btn__open" width="40" height="40">
           <use href="./images/icon/symbol-defs.svg#icon-menu_40px"></use>
         </svg>
       </button>
       <!-- Mobile menu window -->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg class="menu-btn__close" width="18" height="18"></svg>
+          <svg class="menu-btn__close" width="40" height="40">
             <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
           </svg>
         </button>
@@ -86,6 +87,8 @@
           <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
         </ul>
       </div>
+      </div>
+
     </header>
 
     <main>
@@ -188,8 +191,16 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team">
             <li class="team__item">
-              <img src="./images/img-3.jpg" alt="Ігор Дем'яненко" width="270" />
-              <div class="team__block"><h3 class="team__title">Ігор Дем'яненко</h3>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/igor-lg@1x.jpg 1x, ./images/team/igor-lg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/igor-md@1x.jpg 1x, ./images/team/igor-md@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/igor-sm@1x.jpg 1x, ./images/team/igor-sm@2x.jpg 2x">
+                <img src="./images/img-3.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+              
+
+              <div class="team__block">
+                <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 
                   <ul class="action"><li class="action__item"><a class="action__link"   href="">
@@ -206,7 +217,13 @@
                   </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-2.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/olga-lg@1x.jpg 1x, ./images/team/olga-lg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/olga-md@1x.jpg 1x, ./images/team/olga-md@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/olga-sm@1x.jpg 1x, ./images/team/olga-sm@2x.jpg 2x">
+                <img src="./images/img-2.jpg" alt="Ольга Рєпіна" />
+              </picture>
+              
               <div class="team__block"><h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
                 
@@ -222,7 +239,13 @@
                       </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-1.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/mykola-lg@1x.jpg 1x, ./images/team/mykola-lg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/mykola-md@1x.jpg 1x, ./images/team/mykola-md@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/mykola-sm@1x.jpg 1x, ./images/team/mykola-sm@2x.jpg 2x">
+                <img src="./images/img-1.jpg" alt="Микола Тарасов" />
+              </picture>
+              
               <div class="team__block"><h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 
@@ -238,7 +261,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/m-lg@1x.jpg 1x, ./images/team/m-lg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/m-md@1x.jpg 1x, ./images/team/m-md@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/m-sm@1x.jpg 1x, ./images/team/m-sm@2x.jpg 2x">
+                <img src="./images/img.jpg" alt="Михайло Єрмаков" />
+              </picture>
+              
               <div class="team__block"><h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 

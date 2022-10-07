@@ -1,18 +1,19 @@
 .action {
     display: flex;
-    }
-  .action .action__item+ .action__item {
-    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     }
   
-  .action__item {
-    width: 44px;
-    height: 44px;
-  }
+  
+  // .action__item {
+  //   width: 44px;
+  //   height: 44px;
+  // }
   .action__link {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     color: #AFB1B8;
     justify-content: center;
