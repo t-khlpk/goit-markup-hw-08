@@ -1,7 +1,16 @@
-.site-nav {
-    display: flex;
-          
-  }
+.site-nav,
+  .nav {
+    display: none;
+    // align-items: center;
+    @media screen and (min-width: 768px){
+        display: flex;
+        
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        
+    }
+}
   .site-nav .site-nav__item+ .site-nav__item {
     margin-left: 50px;
     display: block;

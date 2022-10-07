@@ -13,11 +13,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    
+    width: 450px;
+    height: 609px;
     background-color: var(--primary-white-color);
     border-radius: 4px;
-    box-shadow: 1px 0px 2px rgb(0 0 0 / 20%), 1px 0px 1px rgb(0 0 0 / 14%), 3px 0px 1px rgb(0 0 0 / 12%);}
+    box-shadow: 1px 0px 2px rgb(0 0 0 / 20%), 1px 0px 1px rgb(0 0 0 / 14%), 3px 0px 1px rgb(0 0 0 / 12%);
+  
+  @media screen and (min-width: 1200px){
+    width: 528px;
+    // height: 581px;
+  }
+    
+  }
   
     
   .form {
