@@ -99,7 +99,24 @@
        
         <ul class="list project__list">
           <li class="project__item">
-            <a class="project__link" href=""><div class="project__thumb"><img class="project__img" src="./images/portfolio/img-1.jpg" alt="Опис команди" />
+            <a class="project__link" href="">
+              <div class="project__thumb">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="
+                  ./images/portfolio/laptop/people-lg@1x.jpg 1x,
+                  ./images/portfolio/laptop/people-lg@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="
+                  ./images/portfolio/tablet/people-md@1x.jpg 1x,
+                  ./images/portfolio/tablet/people-md@1x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                  srcset="
+                  ./images/portfolio/mobile/people-sm@1x.jpg 1x,
+                  ./images/portfolio/mobile/people-sm@2x.jpg 2x">
+                  <img class="project__img" src="./images/portfolio/img-1.jpg" alt="Опис команди" />
+                </picture>
+                
               <div class="project__thumb-text"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
             </div>
               <div class="project__block">

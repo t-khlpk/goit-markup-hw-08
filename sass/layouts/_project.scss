@@ -5,13 +5,29 @@
     justify-content: center;
     gap: 30px;
     margin-top: 50px;
+
+    @media screen and (min-width:768px) {
+      &:last-child {
+        justify-content: start;
+      }
+    }
   
   }
   .project__item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    display: block;
+
+    @media screen and (min-width:768px) {
+      flex-basis: calc((100% - 30px * 2) / 2);}
+
+    @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 30px * 2) / 3);}
   }
   .project__img {
-    width: 370px;
+    width: 354px;
+
+    @media screen and (min-width:1200px) {
+      width: 370px;
+    }
   }
   .project__link {
     display: block;
