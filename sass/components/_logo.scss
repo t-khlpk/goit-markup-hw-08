@@ -1,5 +1,5 @@
 .logo {
-    margin-right: 93px;
+    
    display: flex;
    padding-top: 24px;
    padding-bottom: 24px;
@@ -9,6 +9,10 @@
      line-height: 1.19;
      text-decoration: none; 
      color: var(--accent-color);
+
+     @media screen and (min-width: 1200px) {
+             margin-right: 93px;
+     }
      
      &__color {
         color: var(--logo-color)
