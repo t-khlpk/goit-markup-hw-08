@@ -977,6 +977,7 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     gap: 70px;
+    margin-bottom: 0;
   }
 }
 
