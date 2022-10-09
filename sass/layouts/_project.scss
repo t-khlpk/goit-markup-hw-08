@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    // margin-top: 50px;
 
     @media screen and (min-width:768px) {
       &:last-child {
@@ -20,10 +20,15 @@
       flex-basis: calc((100% - 30px * 2) / 2);}
 
     @media screen and (min-width:1200px) {
-    flex-basis: calc((100% - 30px * 2) / 3);}
+    flex-basis: calc((100% - 30px * 5) / 3);}
   }
   .project__img {
-    width: 354px;
+
+    width: 450px;
+
+    @media screen and (min-width:768px) {
+      width: 354px;
+    }
 
     @media screen and (min-width:1200px) {
       width: 370px;
