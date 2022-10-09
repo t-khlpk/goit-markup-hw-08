@@ -696,6 +696,7 @@ img {
 }
 
 .benefits__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -806,6 +807,7 @@ img {
 }
 
 .team__text {
+  font-weight: 400;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -1449,7 +1451,7 @@ img {
 }
 
 .mobile-menu__link {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   text-decoration: none;
@@ -1517,7 +1519,7 @@ img {
   text-decoration: none;
   color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 93px;
   }
